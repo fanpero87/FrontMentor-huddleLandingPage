@@ -1,11 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	purge: [],
-	darkMode: false, // or 'media' or 'class'
+	content: ["./public/*.{html,js}"],
 	theme: {
 		extend: {
 			backgroundImage: (theme) => ({
-				"huddle-mobile": "url('/public/images/bg-mobile.svg')",
-				"huddle-desktop": "url('/public/images/bg-desktop.svg')",
+				"huddle-mobile": "url('./images/bg-mobile.svg')",
+				"huddle-desktop": "url('./images/bg-desktop.svg')",
 			}),
 			screens: {
 				mobile: "375px",
@@ -26,9 +26,6 @@ module.exports = {
 				body: ["Open Sans", "sans-serif"],
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };

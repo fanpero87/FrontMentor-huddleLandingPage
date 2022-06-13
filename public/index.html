@@ -8,7 +8,7 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="public/images/favicon-32x32.png"
+			href="./images/favicon-32x32.png"
 		/>
 
 		<style>
@@ -21,7 +21,7 @@
 		</style>
 
 		<!-- Tailwind CSS -->
-		<link rel="stylesheet" href="/public/styles.css" />
+		<link rel="stylesheet" href="./styles.css" />
 
 		<!-- Font Awesome -->
 		<link
@@ -37,109 +37,64 @@
 		</title>
 	</head>
 	<body>
-		<div
-			class="
-				bg-contain bg-no-repeat bg-huddle-mobile
-				md:bg-huddle-desktop
-				bg-violet
-			"
-		>
-			<header>
-				<div class="ml-12 pt-10 w-1/3 md:w-28">
-					<img src="/public/images/logo.svg" alt="Logo" />
-				</div>
-			</header>
-
-			<main>
-				<div class="md:flex">
-					<div
-						class="
-							mx-auto
-							my-auto
-							pt-14
-							w-3/4
-							md:
-							ml-12
-							md:h-full md:w-full md:pt-0
-						"
-					>
-						<img
-							src="/public/images/illustration-mockups.svg"
-							alt="Ilustation"
-						/>
+		<div class="h-screen bg-violet">
+			<div
+				class="w-3/4 mx-auto bg-no-repeat bg-contain bg-huddle-mobile md:bg-huddle-desktop"
+			>
+				<header>
+					<div class="w-1/3 pt-10 ml-12 md:w-28">
+						<img src="./images/logo.svg" alt="Logo" />
 					</div>
-					<div>
-						<div>
-							<p
-								class="
-									font-heading font-semibold
-									mx-auto
-									pt-20
-									text-2xl text-center
-									md:text-left
-									text-white
-									w-3/4
-								"
-							>
+				</header>
+
+				<main>
+					<div class="md:flex md:space-x-8">
+						<!-- Left image -->
+						<div class="text-center">
+							<img src="./images/illustration-mockups.svg" alt="Ilustation" />
+						</div>
+						<!-- Right Text -->
+						<div class="mt-12 space-y-4 text-center md:w-1/2 md:text-left">
+							<p class="text-2xl font-semibold text-white font-heading">
 								Build The Community Your Fans Will Love
 							</p>
 							<p
-								class="
-									font-body font-normal
-									justify-center
-									mx-auto
-									text-base
-									leading-relaxed
-									text-center
-									md:text-left
-									text-white
-									pt-4
-									w-3/4
-								"
+								class="text-base font-normal leading-relaxed text-white font-body"
 							>
 								Huddle re-imagines the way we build communities. You have a
 								voice, but so does your audience. Create connections with your
 								users as you engage in genuine discussion.
 							</p>
-						</div>
-						<div class="flex justify-center md:justify-start">
 							<button
-								class="
-									bg-white
-									font-body
-									mt-6
-									px-20
-									py-2
-									rounded-full
-									text-violet
-									hover:bg-magenta hover:text-white
-								"
+								class="px-10 py-2 bg-white rounded-full font-body text-violet hover:bg-magenta hover:text-white"
 							>
 								Register
 							</button>
 						</div>
 					</div>
-				</div>
-			</main>
+				</main>
 
-			<footer>
-				<div class="py-10 flex space-x-4 justify-center md:justify-end">
-					<!-- Facebook Icon -->
-					<a href="">
-						<i class="fab fa-facebook fa-2x"></i>
-					</a>
+				<footer>
+					<div
+						class="flex justify-center mr-8 space-x-4 mt-14 md:mt-0 md:justify-end"
+					>
+						<!-- Facebook Icon -->
+						<a href="">
+							<i class="fab fa-facebook fa-2x"></i>
+						</a>
 
-					<!-- Twitter Icon -->
-					<a href="">
-						<i class="fab fa-twitter fa-2x"></i>
-					</a>
+						<!-- Twitter Icon -->
+						<a href="">
+							<i class="fab fa-twitter fa-2x"></i>
+						</a>
 
-					<!-- Instagram Icon -->
-					<a href="">
-						<i class="fab fa-instagram fa-2x"></i>
-					</a>
-				</div>
-			</footer>
+						<!-- Instagram Icon -->
+						<a href="">
+							<i class="fab fa-instagram fa-2x"></i>
+						</a>
+					</div>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
